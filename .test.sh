@@ -88,7 +88,7 @@ fi
 ## BACKUPS script
 echo " "
 count_backups=$(find task/BACKUPS/ -name "backups.file" 2>/dev/null | wc -l)
-size_backups=$(find task/BACKUPS/ -size +3k -type f -name backups.file 2>/dev/null | wc -l)
+size_backups=$(find task/BACKUPS/ -size +5k -type f -name backups.file 2>/dev/null | wc -l)
 all_backups=$(find task/BACKUPS/ -type f 2>/dev/null | wc -l)
 if [ $all_backups == 1 ] && [ $count_backups == 1 ] && [ $size_backups == 1 ]
 then
