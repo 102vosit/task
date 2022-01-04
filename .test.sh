@@ -39,7 +39,7 @@ fi
 
 ## WORD script
 echo " "
-count_word=$(find task/WORD/ -name "*.doc" 2>/dev/null | wc -l)
+count_word=$(find task/WORD/ -name "word*.doc" 2>/dev/null | wc -l)
 all_word=$(find task/WORD/ -type f 2>/dev/null | wc -l)
 if [ $all_word == 20 ] && [ $count_word == 20 ]
 then
@@ -51,7 +51,7 @@ fi
 
 ## EXCEL script
 echo " "
-count_excel=$(find task/EXCEL/ -name "*.xls" 2>/dev/null | wc -l)
+count_excel=$(find task/EXCEL/ -name "excel*.xls" 2>/dev/null | wc -l)
 all_excel=$(find task/EXCEL/ -type f 2>/dev/null | wc -l)
 if [ $all_excel == 25 ] && [ $count_excel == 25 ]
 then
@@ -63,9 +63,9 @@ fi
 
 ## VIDEO script
 echo " "
-count_video=$(find task/VIDEO/ -name "video*" 2>/dev/null | wc -l)
+count_video=$(find task/VIDEO/ -name "video*.mp4" 2>/dev/null | wc -l)
 all_video=$(find task/VIDEO/ -type f 2>/dev/null | wc -l)
-if [ $all_video == 20 ] && [ $count_video == 20 ]
+if [ $all_video == 22 ] && [ $count_video == 22 ]
 then
     echo "VIDEO directory task is completed"
     echo "Counted all *.mp4 files: $count_video"
@@ -75,9 +75,9 @@ fi
 
 ## AUDIO script
 echo " "
-count_audio=$(find task/AUDIO/ -name "audio*" 2>/dev/null | wc -l)
+count_audio=$(find task/AUDIO/ -name "audio*.mp3" 2>/dev/null | wc -l)
 all_audio=$(find task/AUDIO/ -type f 2>/dev/null | wc -l)
-if [ $all_audio == 20 ] && [ $count_audio == 20 ]
+if [ $all_audio == 55 ] && [ $count_audio == 55 ]
 then
     echo "AUDIO directory task is completed"
     echo "Counted all *.mp3 files: $count_audio"
