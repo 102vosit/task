@@ -10,7 +10,7 @@ then
     echo "JAVA directory task is completed"
     echo "Counted all *.java files: $count_java"
 else
-    echo "JAVA directory task is failed, should be all and only *.java files"
+    echo -e "JAVA directory task is failed, should be all and only \033[41m*.java\033[m files"
 fi
 
 ## Database script
@@ -22,7 +22,7 @@ then
     echo "DATABASE directory task is completed"
     echo "Counted all *.sql files: $count_sql"
 else
-    echo "DATABASE directory task is failed, should be all and only *.sql files"
+    echo -e "DATABASE directory task is failed, should be all and only \033[41m*.sql\033[m files"
 fi
 
 ## HTML script
@@ -34,7 +34,7 @@ then
     echo "HTML directory task is completed"
     echo "Counted all *.html files: $count_html"
 else
-    echo "HTML directory task is failed, should be all and only *.html files"
+    echo -e "HTML directory task is failed, should be all and only \033[41m*.html\033[m files"
 fi
 
 ## WORD script
@@ -46,7 +46,7 @@ then
     echo "WORD directory task is completed"
     echo "Counted all *.doc files: $count_word"
 else
-    echo "WORD directory task is failed, should be all and only *.doc files"
+    echo -e "WORD directory task is failed, should be all and only \033[41m*.doc\033[m files"
 fi
 
 ## EXCEL script
@@ -58,7 +58,7 @@ then
     echo "EXCEL directory task is completed"
     echo "Counted all *.xls files: $count_excel"
 else
-    echo "EXCEL directory task is failed, should be all and only *.xls files"
+    echo -e "EXCEL directory task is failed, should be all and only \033[41m*.xls\033[m files"
 fi
 
 ## VIDEO script
@@ -70,7 +70,7 @@ then
     echo "VIDEO directory task is completed"
     echo "Counted all *.mp4 files: $count_video"
 else
-    echo "VIDEO directory task is failed, should be all and only *.mp4 files"
+    echo -e "VIDEO directory task is failed, should be all and only \033[41m*.mp4\033[m files"
 fi
 
 ## AUDIO script
@@ -82,7 +82,7 @@ then
     echo "AUDIO directory task is completed"
     echo "Counted all *.mp3 files: $count_audio"
 else
-    echo "AUDIO directory task is failed, should be all and only *.mp3 files"
+    echo -e "AUDIO directory task is failed, should be all and only \033[41m*.mp3\033[m files"
 fi
 
 ## BACKUPS script
@@ -95,5 +95,23 @@ then
     echo "BACKUPS directory task is completed"
     echo "backups.file is found "
 else
-    echo "BACKUPS directory task is failed, backups.file not found!"
+    echo -e "BACKUPS directory task is failed, \033[41mbackups.file\033[m not found!"
 fi
+
+
+## Check app and web dirs
+echo " "
+#count_app=$(find task/ -type d -name "app" 2>/dev/null | wc -l)
+#count_web=$(find task/ -type d -name "web" 2>/dev/null | wc -l)
+dir_app="./task/app/"
+dir_web="./task/web/"
+BLUE='\033[0;34m'
+NC='\033[0m'
+if [ -d "$dir_app" ] || [ -d "$dir_web" ]
+then
+    echo -e "After you done all tasks please delete \033[34mapp\033[m/ and \033[34mweb\033[m/ directories inside of \033[34mtask\033[m/"
+else
+    echo "_____________________Hope you completed all tasks_____________________"
+fi
+
+
