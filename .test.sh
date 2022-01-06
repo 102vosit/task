@@ -101,8 +101,6 @@ fi
 
 ## Check app and web dirs
 echo " "
-#count_app=$(find task/ -type d -name "app" 2>/dev/null | wc -l)
-#count_web=$(find task/ -type d -name "web" 2>/dev/null | wc -l)
 dir_app="./task/app/"
 dir_web="./task/web/"
 BLUE='\033[0;34m'
