@@ -1,9 +1,9 @@
 #!/bin/bash
-rm -rf task/
-git clone https://github.com/102vosit/task.git 2>/dev/null
-mv task/.test.sh .
-rm -rf task/*
-rm -rf task/.git/
+# rm -rf task/
+# git clone https://github.com/102vosit/task.git 2>/dev/null
+# mv task/.test.sh .
+# rm -rf task/*
+# rm -rf task/.git/
 mkdir task/{app,web}
 mkdir task/app/{application,index}
 mkdir task/web/{webhost,database}
