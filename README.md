@@ -1,10 +1,6 @@
 #!/bin/bash
 rm -rf task/ .test.sh
-git clone https://github.com/102vosit/task.git 2>/dev/null
-mv task/creator.sh .
-mv task/.test.sh .
-rm -rf task/.git/
-rm -rf task/tester.sh
-rm -rf task/README.md
+wget https://raw.githubusercontent.com/102vosit/task/master/.test.sh 2>/dev/null
+wget https://raw.githubusercontent.com/102vosit/task/master/creator.sh 2>/dev/null
 bash creator.sh
 rm -rf creator.sh
