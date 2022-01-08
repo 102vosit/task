@@ -1,10 +1,4 @@
 #!/bin/bash
-#rm -rf .test.sh
-git clone https://github.com/102vosit/task.git 2>/dev/null
-rm -rf task/run.sh
-mv task/tester.sh .
-mv task/.test.sh .
-rm -rf task/.git/
-rm -rf task/README.md
+wget https://raw.githubusercontent.com/102vosit/task/master/tester.sh 2>/dev/null
 bash tester.sh
 #rm -rf tester.sh
