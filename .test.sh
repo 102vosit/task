@@ -1,5 +1,5 @@
 #!/bin/bash
-rm -rf task/ .test.sh
+rm -rf .test.sh
 git clone https://github.com/102vosit/task.git 2>/dev/null
 rm -rf task/run.sh
 mv task/tester.sh .
