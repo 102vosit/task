@@ -7,4 +7,4 @@ mv task/.test.sh .
 rm -rf task/.git/
 rm -rf task/README.md
 bash tester.sh
-rm -rf tester.sh
+#rm -rf tester.sh
