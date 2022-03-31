@@ -31,5 +31,11 @@ graph TD;
     start.sh;
     task-->app;
     task-->web;
-    test.shF;
+    test.sh;
+    app-->..dirs;
+    app-->..files;
+    app-->..etc;
+    web-->..dirs;
+    web-->..files;
+    web-->..etc;
 ```
