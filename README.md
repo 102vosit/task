@@ -20,13 +20,12 @@ Follow instructions on TASK.pdf file
 | **bash start.sh** | Executing start file it creates project |
 | **cd task** | Change directory and start the task |
 
-<div style="background-color: rgb(50, 50, 50);">
-```text
+
+```bash
 wget https://raw.githubusercontent.com/102vosit/task/master/start.sh
 bash start.sh
 cd task/
 ```
-</div>
 
 ```mermaid
 graph TD;
