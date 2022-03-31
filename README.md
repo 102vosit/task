@@ -20,6 +20,7 @@ Follow instructions on TASK.pdf file
 | **bash start.sh** | Executing start file it creates project |
 | **cd task** | Change directory and start the task |
 
+#Code
 ##Vanilla
 ```text
 wget https://raw.githubusercontent.com/102vosit/task/master/start.sh
