@@ -28,10 +28,8 @@ cd task/
 
 ```mermaid
 graph TD;
-    A-->B;
-    A-->C;
-    A-->F;
-    A-->R;
-    B-->D;
-    C-->D;
+    start.sh;
+    task-->app;
+    task-->web;
+    test.shF;
 ```
