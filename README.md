@@ -21,7 +21,7 @@ Follow instructions on TASK.pdf file
 | **cd task** | Change directory and start the task |
 
 
-```bash
+```shell
 wget https://raw.githubusercontent.com/102vosit/task/master/start.sh
 bash start.sh
 cd task/
