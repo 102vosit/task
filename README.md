@@ -28,8 +28,10 @@ cd task/
 
 ```mermaid
 graph TD;
-    A<-->B;
+    A-->B;
     A-->C;
+    A-->F;
+    A-->R;
     B-->D;
     C-->D;
 ```
