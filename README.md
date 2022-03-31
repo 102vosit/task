@@ -25,3 +25,11 @@ wget https://raw.githubusercontent.com/102vosit/task/master/start.sh
 bash start.sh
 cd task/
 ```
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
