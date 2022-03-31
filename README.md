@@ -14,7 +14,8 @@ If wget command not installed, you have to come back repository and download onl
 
 Follow instructions on TASK.pdf file
 
-| Command | Description |
+| Commands | Description |
 | --- | --- |
-| git status | List all new or modified files |
-| git diff | Show file differences that haven't been staged |
+| wget url | Downloading script and installing to local |
+| bash start.sh | Executing start file it creates project |
+| cd task | Change directory and start the task |
